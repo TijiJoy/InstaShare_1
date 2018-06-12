@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.projects.tiji.instashare.PostActivity">
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/addimageframe"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="imageButtonClicked"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:text="Pick Image"
+        />
+    <EditText
+        android:id="@+id/editDesc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:background="@drawable/editshape"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+    android:hint="Enter description"/>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editshape"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:hint="Enter Name"/>
+
+    <Button
+        android:id="@+id/uploadimage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Upload"
+        android:layout_marginTop="50dp"
+        android:onClick="uploadButtonClick"/>
+</LinearLayout>
